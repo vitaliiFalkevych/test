@@ -1,0 +1,50 @@
+body {
+  background: #ebeef3;
+}
+.container {
+  padding: 50px;
+}
+.task-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+ul {
+  list-style: none;
+  padding: 10px 0;
+}
+ul li {
+  position: relative;
+  padding: 5px;
+}
+ul li:nth-child(odd) {
+  background-color: #9eded5;
+}
+ul li:nth-child(even) {
+  background-color: #09a79f;
+  color: #ffffff;
+}
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+.delete {
+  background: red;
+  padding: 0 0 0 9px;
+  border-radius: 50px;
+  width: 27px;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+.custom-control {
+  display: inline-block;
+}
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: #077b2b;
+  background-color: #06bf3f;
+}
